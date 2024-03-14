@@ -8,7 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/kjw1995/snp-configserver.git
+          uri: https://github.com/kjw1995-snp-org/snp-configserver.git
           search-paths: src/main/resources/**
           default-label: main
           username: kjw1995
