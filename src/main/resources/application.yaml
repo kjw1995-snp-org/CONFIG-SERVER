@@ -20,7 +20,7 @@ spring:
           default-label: main
           username: kjw1995
 #          all_access_token
-          password: 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
+          password: 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
           clone-on-start: true
 management:
   endpoints:
