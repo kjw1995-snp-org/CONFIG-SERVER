@@ -19,8 +19,7 @@ spring:
           search-paths: src/main/resources/**
           default-label: main
           username: kjw1995
-#          all_access_token
-          password: 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
+          password: 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
           clone-on-start: true
 management:
   endpoints:
