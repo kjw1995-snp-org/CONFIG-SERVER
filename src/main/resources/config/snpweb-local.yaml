@@ -6,3 +6,13 @@ spring:
   thymeleaf:
     prefix: classpath:templates/
     suffix: .html
+
+server:
+  tomcat:
+    threads:
+      max: 1000
+      min-spare: 100
+    max-connections: 8192
+    accept-count: 200
+    connection-timeout: 180000
+  port: 8001

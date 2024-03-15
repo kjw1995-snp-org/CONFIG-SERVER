@@ -8,12 +8,12 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/kjw1995-snp-org/snp-configserver.git
+          uri: https://github.com/kjw1995-snp-org/CONFIG-SERVER.git
           search-paths: src/main/resources/**
           default-label: main
           username: kjw1995
 #          all_access_token
-          password: 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
+          password: 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
 management:
   endpoints:
     web:
