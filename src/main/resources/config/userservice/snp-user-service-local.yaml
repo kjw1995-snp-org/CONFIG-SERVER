@@ -18,6 +18,10 @@ spring:
       naming:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  jwt:
+    secret-key: c2VjcmV0LWtleS1ieS1rancxOTk1 # secret-key-by-kjw1995
+    access-token-expiry-seconds: 21600 # 6시간
+    refresh-token-expiry-seconds: 604800 # 1주일
 
 server:
   port: 8002
