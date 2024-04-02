@@ -5,3 +5,25 @@ jwt:
   secret-key: c29jaWFsLW5ldHdvcmstcHJvamVjdC11c2VyLXNlcnZpY2Utand0LXNlY3JldC1rZXktY3JlYXRlLWJ5LWtqdzE5OTU= #social-network-project-user-service-jwt-secret-key-create-by-kjw1995
   access-token-expiry-seconds: 21600 #6시간
   refresh-token-expiry-seconds: 604800 #1주일
+
+cloud:
+  gateway:
+    globalcors:
+      '[/**]':
+        allowedOrigins:
+          - 'http://localhost:7999'
+        allow-credentials: true
+        allowedHeaders:
+          - x-request-with
+          - jwt
+          - content-type
+          - credential
+          - X-AUTH-TOKEN
+          - X_CSRF-TOKEN
+        allowedMethods:
+          - POST
+          - GET
+          - PUT
+          - PATCH
+          - OPTIONS
+          - DELETE
