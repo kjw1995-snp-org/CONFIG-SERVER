@@ -1,20 +1,9 @@
-logging:
-  level:
-    root: info
-
 spring:
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/snpuser?serverTimezone=Asia/Seoul
+    driver-class-name: net.sf.log4jdbc.sql.jdbcapi.DriverSpy
+    url: jdbc:log4jdbc:mysql://localhost:3306/snpuser?serverTimezone=Asia/Seoul
     username: snpadmin
     password: snp123!@#
-  properties:
-    hibernate:
-      format_sql : true
-  logging:
-    level:
-      org.hibernate.SQL: debug
-      org.hibernate.type.descriptor.sql.BasicBinder: trace
   jpa:
     generate:
       ddl: false
