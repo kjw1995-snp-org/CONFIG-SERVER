@@ -1,7 +1,7 @@
 spring:
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    jdbc-url: jdbc:mysql://localhost:3306/snpuser?serverTimezone=Asia/Seoul
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/snpuser?serverTimezone=Asia/Seoul
     username: snpadmin
     password: snp123!@#
   jpa:
