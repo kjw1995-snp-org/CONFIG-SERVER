@@ -1,3 +1,7 @@
+logging:
+  level:
+    root: info
+
 spring:
   mvc:
     static:
@@ -17,5 +21,18 @@ server:
     connection-timeout: 180000
   port: 8889
 
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    instance-id: snp-web
+
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+
 jwt:
-  secret-key: c29jaWFsLW5ldHdvcmstcHJvamVjdC11c2VyLXNlcnZpY2Utand0LXNlY3JldC1rZXktY3JlYXRlLWJ5LWtqdzE5OTU= #social-network-project-user-service-jwt-secret-key-create-by-kjw1995
+  #social-network-project-user-service-jwt-secret-key-create-by-kjw1995, crypto = sha256
+  secret-key: c29jaWFsLW5ldHdvcmstcHJvamVjdC11c2VyLXNlcnZpY2Utand0LXNlY3JldC1rZXktY3JlYXRlLWJ5LWtqdzE5OTU=
