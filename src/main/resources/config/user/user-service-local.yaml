@@ -1,3 +1,10 @@
+logging:
+  level:
+    org:
+      hibernate:
+        type:
+          descriptor:
+            sql: trace
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -5,6 +12,10 @@ spring:
     username: snpadmin
     password: snp123!@#
   jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
     generate:
       ddl: false
     hibernate:
