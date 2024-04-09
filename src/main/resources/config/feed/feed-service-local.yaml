@@ -5,10 +5,9 @@ logging:
         type:
           descriptor:
             sql: trace
-
 spring:
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/snpfeed?serverTimezone=Asia/Seoul
     username: snpadmin
     password: snp123!@#
